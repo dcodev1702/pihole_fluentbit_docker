@@ -1,7 +1,7 @@
 # Pihole : Fluent-bit : Docker Compose : Azure Log Analytics
 Pi-Hole and Fluent Bit (w/ Azure Log Ingestion API) using Docker Compose
 
-## Optional : Build container image
+## Optional : Build container image w/ [Unbound](https://docs.pi-hole.net/guides/dns/unbound/)
 ```console
 docker build --no-cache -t pihole-unbound .
 ```
@@ -46,7 +46,7 @@ sudo systemctl restart systemd-resolved.service
   
 ![CEB55ACA-48BC-40C9-BAA1-8E244B894EF8](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/5913ffe1-20c6-466c-87fa-491d1025a05f)
 
-* Modify fluent-bit.conf with the required Azure information
+* Modify fluent-bit.conf with the required Azure information to enable the Azure Monitor Logs Ingestion API (DCR/DCE)
   * Entra ID <br />
     -- Client ID <br />
     -- Client Secret <br />
