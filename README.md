@@ -31,7 +31,7 @@ sudo systemctl restart systemd-resolved.service
 ![FC2DB7E0-A2E6-41DD-877C-28170A039645](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/940ebe50-09b8-4553-9846-2dd640e4e4b9)
 
 * Create App Registration & SECRET (e.g. pihole-dns). This has to be assigned the Monitoring Metrics Publisher' role to the Data Collection Rule (DCR)
-![image](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/c3898425-0fc3-46db-818e-23c78a1eaa77)
+![image](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/37418d48-3c2c-4339-a025-2e0c2d61ecda)
 
 * The Client App ID and Client App Secret has to be saved so you can use it for the fluent-bit.conf - Log Ingestion API section of the configuration
 ![image](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/6fe4e51e-9ddd-4c36-8208-f80923a9a49b)
