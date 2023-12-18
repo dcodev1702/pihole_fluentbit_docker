@@ -1,7 +1,12 @@
 # Pihole : Fluent-bit : Docker Compose : Azure Log Analytics
 Pi-Hole and Fluent Bit (w/ Azure Log Ingestion API) using Docker Compose
 
-## Ubuntu Setup
+## Optional : Build container image
+```console
+docker build --no-cache -t pihole-unbound .
+```
+
+## Ubuntu Setup (22.04 | 23.04)
 * systemd-resolvd has to be re-configured so it doesn't manager Ubuntu and Pi-Hole & Unbound
 can use port 53 (UDP/TCP)
 ```console
@@ -47,3 +52,14 @@ docker-compose down -v
 ```console
 docker logs -f fluent-bit
 ```
+
+Login to Pi-Hole
+![0BF4816E-7C3D-4F9C-BC83-05BFCBDEEDAB](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/14e606d8-4a25-48a1-b410-3331a3057a93)
+
+
+Configure Pi-Hole with Unbound (127.0.0.1#5335)
+![53CE6A36-8729-4BBF-831B-92429249925C_1_201_a](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/e67b67e2-444a-4d84-8951-73ffafa63490)
+
+
+
+
