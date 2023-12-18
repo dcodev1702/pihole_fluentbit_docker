@@ -23,13 +23,13 @@ sudo systemctl restart systemd-resolved.service
 ![290B0AA2-1E3A-47AB-B16A-C5EB9C2EB204](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/0207d30f-975f-4e39-b1bd-596e26040f9b)
 
 * Modify fluent-bit.conf with the required Azure information
-  * Entra ID
-    -- Client ID
-    -- Client Secret
-    -- Tenant ID
-  * Data Collection Rule
-    -- DCR ID
-  * Data Collection Endpoint
-    -- Data Ingestion Endpoint URL
-    
+  * Entra ID <br />
+    -- Client ID <br />
+    -- Client Secret <br />
+    -- Tenant ID <br />
+  * Data Collection Rule <br />
+    -- DCR ID <br />
+  * Data Collection Endpoint <br />
+    -- Data Ingestion Endpoint URL <br />
+     
   
