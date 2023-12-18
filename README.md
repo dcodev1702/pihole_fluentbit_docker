@@ -27,6 +27,10 @@ sudo systemctl restart systemd-resolved.service
 * Modify environment variables as required (e.g. IP Address, Password, etc)
 ![290B0AA2-1E3A-47AB-B16A-C5EB9C2EB204](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/0207d30f-975f-4e39-b1bd-596e26040f9b)
 
+* Create Data Collection Endpoint (e.g. pihole-dns-dce)
+![FC2DB7E0-A2E6-41DD-877C-28170A039645](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/940ebe50-09b8-4553-9846-2dd640e4e4b9)
+
+
 * Modify fluent-bit.conf with the required Azure information
   * Entra ID <br />
     -- Client ID <br />
