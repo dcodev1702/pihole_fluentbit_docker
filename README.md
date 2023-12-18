@@ -33,6 +33,3 @@ sudo systemctl restart systemd-resolved.service
     -- Data Ingestion Endpoint URL <br />
 
 ![3618473B-FD56-40A9-890B-8174D99943D3](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/1d3a9e9b-340e-420f-b37f-121f4458d6ff)
-
-     
-  
