@@ -45,6 +45,11 @@ sudo systemctl restart systemd-resolved.service
   * Data Collection Endpoint <br />
     -- Data Ingestion Endpoint URL <br />
 
+* VERY IMPORTANT STEP: Assign The App in Entra ID to the Log Analytics Workspace with 'Monitoring Metrics Publisher'
+  * You will not be able to autenticate to the Data Collection Rule and send logs to the table w/o completing this step!!!
+  
+![CEB55ACA-48BC-40C9-BAA1-8E244B894EF8](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/5913ffe1-20c6-466c-87fa-491d1025a05f)
+
 ![3618473B-FD56-40A9-890B-8174D99943D3](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/1d3a9e9b-340e-420f-b37f-121f4458d6ff)
 
 Review docker-compose.yml and modify as required
