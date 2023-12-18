@@ -1,0 +1,47 @@
+version: '3.9'
+
+# More info at https://github.com/pi-hole/docker-pi-hole/ 
+# and https://docs.pi-hole.net/
+services:
+  pihole:
+    container_name: pihole-unbound
+    hostname: ${HOSTNAME}
+    image: digitalkali/pihole-unbound:latest
+    mem_limit: 1G
+    cpus: 1.0
+    network_mode: "host"
+    environment:
+      TZ: 'UTC'
+      WEBPASSWORD: ${WEBPASSWORD}
+      DNSMASQ_LISTENING: 'all'
+      ServerIP: ${FTLCONF_LOCAL_IPV4}
+      FTLCONF_LOCAL_IPV4: ${FTLCONF_LOCAL_IPV4}
+      PIHOLE_DNS: 127.0.0.1#5335
+      DNSSEC: 'true'
+      FLAG: 'WE SEE YOU & WE LOGGY YOU'
+    volumes:
+      - ./etc-pihole:/etc/pihole
+      - ./etc-dnsmasq.d:/etc/dnsmasq.d
+      - ./unbound/pi-hole.conf:/etc/unbound/pi-hole.conf
+      - pihole-dnslog-volume:/var/log
+    restart: unless-stopped
+  fluent-bit:
+    container_name: fluent-bit
+    hostname: fluent-bit
+    image: fluent/fluent-bit
+    mem_limit: 512M 
+    cpus: 0.5
+    volumes:
+      - ./fb-conf/fluent-bit.conf:/fluent-bit/etc/fluent-bit.conf:ro
+      - ./fb-conf/parsers.conf:/fluent-bit/etc/parsers.conf:ro
+      - ./fb-conf/plugins.conf:/fluent-bit/etc/plugins.conf:ro
+      - pihole-dnslog-volume:/var/log
+    environment:
+      FLAG: 'ALL UR BITS ARE SHIPPED BY US'
+    restart: unless-stopped
+    depends_on:
+      - pihole
+
+volumes:
+  pihole-dnslog-volume:
+    driver: local
