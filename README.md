@@ -61,5 +61,7 @@ Configure Pi-Hole with Unbound (127.0.0.1#5335)
 ![53CE6A36-8729-4BBF-831B-92429249925C_1_201_a](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/e67b67e2-444a-4d84-8951-73ffafa63490)
 
 
+Fluent Bit configured with Azure Log Ingestion API [OUTPUT]
+![1C94B134-3A4F-4281-BF58-9C564C836D52](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/e7922b04-48f7-4bd0-a15d-41cd2a57d429)
 
 
