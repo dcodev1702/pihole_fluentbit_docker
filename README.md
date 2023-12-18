@@ -1,5 +1,5 @@
 # Pihole : Fluent-bit : Docker Compose : Azure Log Analytics
-Pi-Hole and Fluent Bit (w/ Azure Log Ingestion API) using Docker Compose
+[Pi-Hole](https://pi-hole.net/) and [Fluent Bit](https://docs.fluentbit.io/manual/pipeline/outputs/azure_logs_ingestion) (w/ Azure Log Ingestion API) using Docker Compose
 
 ## Optional : Build container image w/ [Unbound](https://docs.pi-hole.net/guides/dns/unbound/)
 ```console
