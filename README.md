@@ -33,6 +33,8 @@ sudo systemctl restart systemd-resolved.service
 * Create a Custom Log (DCR based) from Log Analytics -> Tables
 ![4BF3DB0D-B223-4125-BEF7-E3FB77A70524](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/34202dd6-df13-4078-8335-9482b2179e04)
 
+![E23BC197-BAA5-4D5A-A35E-4ECABC6790CD](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/94972096-dd76-4719-b8e7-ccdd48f2b7f8)
+
 * Modify fluent-bit.conf with the required Azure information
   * Entra ID <br />
     -- Client ID <br />
@@ -42,9 +44,6 @@ sudo systemctl restart systemd-resolved.service
     -- DCR ID <br />
   * Data Collection Endpoint <br />
     -- Data Ingestion Endpoint URL <br />
-
-![E23BC197-BAA5-4D5A-A35E-4ECABC6790CD](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/94972096-dd76-4719-b8e7-ccdd48f2b7f8)
-
 
 ![3618473B-FD56-40A9-890B-8174D99943D3](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/1d3a9e9b-340e-420f-b37f-121f4458d6ff)
 
