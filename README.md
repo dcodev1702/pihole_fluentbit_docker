@@ -37,6 +37,8 @@ sudo systemctl restart systemd-resolved.service
   * Data Collection Endpoint <br />
     -- Data Ingestion Endpoint URL <br />
 
+![4BF3DB0D-B223-4125-BEF7-E3FB77A70524](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/34202dd6-df13-4078-8335-9482b2179e04)
+
 ![E23BC197-BAA5-4D5A-A35E-4ECABC6790CD](https://github.com/dcodev1702/pihole_fluentbit_docker/assets/32214072/94972096-dd76-4719-b8e7-ccdd48f2b7f8)
 
 
