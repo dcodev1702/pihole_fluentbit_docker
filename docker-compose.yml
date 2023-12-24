@@ -18,7 +18,7 @@ services:
       FTLCONF_LOCAL_IPV4: ${FTLCONF_LOCAL_IPV4}
       PIHOLE_DNS: 127.0.0.1#5335
       DNSSEC: 'true'
-      FLAG: 'WE SEE YOU & WE RESOLVE YOU'
+      FLAG: 'WE SEE YOU & RESOLVE YOU'
     volumes:
       - ./etc-pihole:/etc/pihole
       - ./etc-dnsmasq.d:/etc/dnsmasq.d
